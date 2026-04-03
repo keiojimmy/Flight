@@ -1683,3 +1683,21 @@ body[data-lang="jp"] p {
 .nihonbashi-label {
   font-size: 0.9375rem;
 }
+
+/* ══════════════════════════════════════════════════════════
+   PHILOSOPHY STRIP — MOBILE 2x2 GRID
+══════════════════════════════════════════════════════════ */
+@media (max-width: 640px) {
+  .philosophy-strip {
+    flex-wrap: wrap;
+  }
+
+  .phil-item {
+    flex: 0 0 50%;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .phil-divider {
+    display: none;
+  }
+}

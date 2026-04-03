@@ -1486,3 +1486,133 @@ body[data-lang="jp"] p {
     padding: 0.5rem 0;
   }
 }
+
+/* ══════════════════════════════════════════════════════════
+   LOGO IMAGE (PNG)
+══════════════════════════════════════════════════════════ */
+.logo-img {
+  height: 42px;
+  width: auto;
+  display: block;
+  object-fit: contain;
+}
+
+.footer-logo-img {
+  height: 52px;
+  width: auto;
+  display: block;
+  margin-bottom: 1.25rem;
+  opacity: 0.92;
+}
+
+/* ══════════════════════════════════════════════════════════
+   NIHONBASHI — CROP WHITE BORDERS
+══════════════════════════════════════════════════════════ */
+.nihonbashi-img {
+  object-fit: cover;
+  object-position: center 30%;
+  transform: scale(1.12);
+  transform-origin: center 35%;
+  width: 100%;
+  height: 100%;
+}
+
+.nihonbashi-art {
+  overflow: hidden;
+}
+
+/* ══════════════════════════════════════════════════════════
+   CONTACT — INFO PANEL (no form)
+══════════════════════════════════════════════════════════ */
+.contact-info-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  padding: 3rem;
+  background: var(--paper);
+  border: 1px solid var(--border);
+}
+
+.contact-info-block {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.contact-email-link {
+  font-family: var(--font-display);
+  font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+  font-weight: 400;
+  color: var(--red);
+  letter-spacing: 0.02em;
+  transition: color 0.2s;
+  text-decoration: none;
+}
+
+.contact-email-link:hover {
+  color: var(--red-hover);
+}
+
+/* ══════════════════════════════════════════════════════════
+   FRESH LOOK UPDATES
+══════════════════════════════════════════════════════════ */
+
+/* Crisper nav */
+.nav-header {
+  border-bottom: 1px solid var(--border);
+  background: rgba(250, 250, 248, 0.97);
+}
+
+/* Hero — stronger red accent line */
+.kicker-line {
+  width: 56px;
+  height: 2px;
+  background: var(--red);
+}
+
+/* Bolder section numbers */
+.label-num {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--red);
+}
+
+/* Service cards — sharper border + hover lift */
+.service-card {
+  border-top: 2px solid var(--ink) !important;
+  transition: transform 0.25s var(--ease-silk), box-shadow 0.25s var(--ease-silk);
+}
+
+.service-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(0,0,0,0.08);
+}
+
+/* Philosophy strip — bolder kanji */
+.phil-kanji {
+  font-size: clamp(2.5rem, 5vw, 3.75rem);
+  font-weight: 300;
+}
+
+/* CTA strip — slightly richer dark */
+.cta-strip {
+  background: #0f0f0f;
+}
+
+/* Footer — dark bg for contrast */
+.site-footer {
+  background: #0f0f0f;
+}
+
+.footer-tagline,
+.footer-col-label,
+.footer-link,
+.footer-copy,
+.footer-legal-link {
+  color: rgba(250,250,248,0.65) !important;
+}
+
+.footer-link:hover,
+.footer-legal-link:hover {
+  color: #fff !important;
+}

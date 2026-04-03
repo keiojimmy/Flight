@@ -8,7 +8,7 @@
 
   /* ── State ── */
   const html = document.documentElement;
-  let currentLang = localStorage.getItem('kbb-lang') || 'en';
+  let currentLang = localStorage.getItem('kbb-lang') || 'jp';
   let menuOpen = false;
 
   /* ═══════════════════ LANGUAGE TOGGLE ═══════════════════ */

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-lang="en">
+<html lang="ja" data-lang="jp">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,44 +17,7 @@
     <div class="nav-inner">
 
       <a href="#hero" class="nav-logo" aria-label="KBB Corp">
-        <svg class="logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 200" role="img" aria-label="KBB Corp logo">
-          <circle cx="100" cy="100" r="92" fill="#fff" stroke="#1a1a1a" stroke-width="5"/>
-          <clipPath id="logoClip"><circle cx="100" cy="100" r="89"/></clipPath>
-          <!-- Red arch bridge -->
-          <path d="M 14 93 C 14 32 186 32 186 93" fill="none" stroke="#BE1E2D" stroke-width="8" stroke-linecap="round"/>
-          <rect x="14" y="89" width="172" height="6" fill="#BE1E2D"/>
-          <line x1="30" y1="65" x2="30" y2="89" stroke="#BE1E2D" stroke-width="5"/>
-          <line x1="51" y1="47" x2="51" y2="89" stroke="#BE1E2D" stroke-width="5"/>
-          <line x1="74" y1="36" x2="74" y2="89" stroke="#BE1E2D" stroke-width="5"/>
-          <line x1="100" y1="32" x2="100" y2="89" stroke="#BE1E2D" stroke-width="5"/>
-          <line x1="126" y1="36" x2="126" y2="89" stroke="#BE1E2D" stroke-width="5"/>
-          <line x1="149" y1="47" x2="149" y2="89" stroke="#BE1E2D" stroke-width="5"/>
-          <line x1="170" y1="65" x2="170" y2="89" stroke="#BE1E2D" stroke-width="5"/>
-          <!-- Japanese waves -->
-          <g clip-path="url(#logoClip)">
-            <path d="M 10 107 C 22 97,34 117,48 107 C 62 97,74 117,88 107 C 102 97,114 117,128 107 C 142 97,154 117,168 107 C 180 99,188 106,190 104" fill="none" stroke="#1a1a1a" stroke-width="3" stroke-linecap="round"/>
-            <path d="M 10 107 C 12 101,19 99,22 97" fill="none" stroke="#1a1a1a" stroke-width="2.5"/>
-            <path d="M 88 107 C 90 101,97 99,102 97" fill="none" stroke="#1a1a1a" stroke-width="2.5"/>
-            <path d="M 168 107 C 170 101,177 99,180 99" fill="none" stroke="#1a1a1a" stroke-width="2.5"/>
-            <circle cx="52" cy="112" r="2.5" fill="#1a1a1a"/>
-            <circle cx="100" cy="110" r="2" fill="#1a1a1a"/>
-            <circle cx="148" cy="112" r="2.5" fill="#1a1a1a"/>
-            <path d="M 12 126 C 26 114,40 136,56 126 C 72 114,84 136,100 126 C 116 114,128 136,144 126 C 160 114,172 134,184 126" fill="none" stroke="#1a1a1a" stroke-width="3" stroke-linecap="round"/>
-            <path d="M 12 126 C 14 118,22 116,26 114" fill="none" stroke="#1a1a1a" stroke-width="2.5"/>
-            <path d="M 100 126 C 102 118,110 116,116 114" fill="none" stroke="#1a1a1a" stroke-width="2.5"/>
-            <circle cx="64" cy="132" r="2" fill="#1a1a1a"/>
-            <circle cx="130" cy="130" r="2" fill="#1a1a1a"/>
-            <path d="M 8 148 C 26 134,44 156,64 146 C 84 134,96 156,116 146 C 136 134,150 154,168 146 C 180 140,188 144,192 142" fill="none" stroke="#1a1a1a" stroke-width="3.5" stroke-linecap="round"/>
-            <path d="M 8 148 C 11 138,22 136,26 134" fill="none" stroke="#1a1a1a" stroke-width="3"/>
-            <path d="M 116 146 C 119 136,130 134,136 134" fill="none" stroke="#1a1a1a" stroke-width="3"/>
-            <circle cx="26" cy="137" r="2.5" fill="#1a1a1a"/>
-            <circle cx="28" cy="132" r="1.5" fill="#1a1a1a"/>
-            <circle cx="136" cy="137" r="2.5" fill="#1a1a1a"/>
-            <circle cx="138" cy="132" r="1.5" fill="#1a1a1a"/>
-          </g>
-          <!-- KBB text -->
-          <text x="218" y="138" font-family="Georgia,'Times New Roman',serif" font-size="86" font-weight="700" letter-spacing="-3" fill="#1a1a1a">KBB</text>
-        </svg>
+        <img src="assets/kbblogo.png" alt="KBB Corp" class="logo-img" />
       </a>
 
       <nav class="nav-links" role="navigation">
@@ -78,9 +41,9 @@
 
       <div class="nav-right">
         <button class="lang-toggle" id="lang-toggle" aria-label="Switch language">
-          <span class="toggle-en">EN</span>
-          <span class="toggle-divider">|</span>
           <span class="toggle-jp">JP</span>
+          <span class="toggle-divider">|</span>
+          <span class="toggle-en">EN</span>
         </button>
         <button class="nav-menu-btn" id="nav-menu-btn" aria-label="Menu">
           <span></span><span></span><span></span>
@@ -487,68 +450,24 @@
             </div>
           </div>
 
-          <div class="contact-form-wrap">
-            <form class="contact-form" id="contact-form" novalidate>
-              <div class="form-group">
-                <label for="name" class="form-label">
-                  <span class="lang-en">Full Name</span>
-                  <span class="lang-jp">お名前</span>
-                </label>
-                <input type="text" id="name" name="name" class="form-input" required
-                  placeholder-en="Your full name"
-                  placeholder-jp="お名前をご記入ください" />
-              </div>
-
-              <div class="form-group">
-                <label for="company" class="form-label">
-                  <span class="lang-en">Company</span>
-                  <span class="lang-jp">会社名</span>
-                </label>
-                <input type="text" id="company" name="company" class="form-input"
-                  placeholder-en="Your company"
-                  placeholder-jp="会社名をご記入ください" />
-              </div>
-
-              <div class="form-group">
-                <label for="email" class="form-label">
-                  <span class="lang-en">Email Address</span>
-                  <span class="lang-jp">メールアドレス</span>
-                </label>
-                <input type="email" id="email" name="email" class="form-input" required
-                  placeholder-en="you@company.com"
-                  placeholder-jp="メールアドレスをご記入ください" />
-              </div>
-
-              <div class="form-group">
-                <label for="interest" class="form-label">
-                  <span class="lang-en">Area of Interest</span>
-                  <span class="lang-jp">ご関心のある分野</span>
-                </label>
-                <select id="interest" name="interest" class="form-input form-select">
-                  <option value="" class="lang-en">Select a service...</option>
-                  <option value="strategy" class="lang-en">Management Strategy</option>
-                  <option value="entry" class="lang-en">Global Market Entry</option>
-                  <option value="advisory" class="lang-en">Corporate Advisory</option>
-                  <option value="org" class="lang-en">Organizational Design</option>
-                  <option value="other" class="lang-en">Other</option>
-                </select>
-              </div>
-
-              <div class="form-group">
-                <label for="message" class="form-label">
-                  <span class="lang-en">Message</span>
-                  <span class="lang-jp">メッセージ</span>
-                </label>
-                <textarea id="message" name="message" class="form-input form-textarea" rows="5" required
-                  placeholder-en="Tell us about your challenge or opportunity..."
-                  placeholder-jp="課題や機会についてお聞かせください..."></textarea>
-              </div>
-
-              <button type="submit" class="btn-primary form-submit">
-                <span class="lang-en">Send Message</span>
-                <span class="lang-jp">送信する</span>
-              </button>
-            </form>
+          <div class="contact-info-panel">
+            <div class="contact-info-block">
+              <span class="detail-label lang-jp">メール</span>
+              <span class="detail-label lang-en">Email</span>
+              <a href="mailto:info@kbbcorp.jp" class="contact-email-link">info@kbbcorp.jp</a>
+            </div>
+            <div class="contact-info-block">
+              <span class="detail-label lang-jp">営業時間</span>
+              <span class="detail-label lang-en">Hours</span>
+              <span class="detail-value lang-jp">月 – 金、9:00 – 18:00 JST</span>
+              <span class="detail-value lang-en">Mon – Fri, 9:00 – 18:00 JST</span>
+            </div>
+            <div class="contact-info-block">
+              <span class="detail-label lang-jp">所在地</span>
+              <span class="detail-label lang-en">Address</span>
+              <span class="detail-value lang-jp">〒150-0021<br />東京都港区南青山3-1-36<br />青山丸竹ビル6F</span>
+              <span class="detail-value lang-en">Aoyama Marutake Bldg. 6F<br />3-1-36 Minami-Aoyama<br />Minato-ku, Tokyo 〒150-0021</span>
+            </div>
           </div>
         </div>
       </div>
@@ -561,25 +480,7 @@
     <div class="container">
       <div class="footer-top">
         <div class="footer-brand">
-          <svg class="footer-logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 200" aria-label="KBB Corp">
-            <circle cx="100" cy="100" r="92" fill="transparent" stroke="#1a1a1a" stroke-width="5"/>
-            <clipPath id="footerClip"><circle cx="100" cy="100" r="89"/></clipPath>
-            <path d="M 14 93 C 14 32 186 32 186 93" fill="none" stroke="#BE1E2D" stroke-width="8" stroke-linecap="round"/>
-            <rect x="14" y="89" width="172" height="6" fill="#BE1E2D"/>
-            <line x1="30" y1="65" x2="30" y2="89" stroke="#BE1E2D" stroke-width="5"/>
-            <line x1="51" y1="47" x2="51" y2="89" stroke="#BE1E2D" stroke-width="5"/>
-            <line x1="74" y1="36" x2="74" y2="89" stroke="#BE1E2D" stroke-width="5"/>
-            <line x1="100" y1="32" x2="100" y2="89" stroke="#BE1E2D" stroke-width="5"/>
-            <line x1="126" y1="36" x2="126" y2="89" stroke="#BE1E2D" stroke-width="5"/>
-            <line x1="149" y1="47" x2="149" y2="89" stroke="#BE1E2D" stroke-width="5"/>
-            <line x1="170" y1="65" x2="170" y2="89" stroke="#BE1E2D" stroke-width="5"/>
-            <g clip-path="url(#footerClip)">
-              <path d="M 10 107 C 22 97,34 117,48 107 C 62 97,74 117,88 107 C 102 97,114 117,128 107 C 142 97,154 117,168 107 C 180 99,188 106,190 104" fill="none" stroke="#1a1a1a" stroke-width="3" stroke-linecap="round"/>
-              <path d="M 12 126 C 26 114,40 136,56 126 C 72 114,84 136,100 126 C 116 114,128 136,144 126 C 160 114,172 134,184 126" fill="none" stroke="#1a1a1a" stroke-width="3" stroke-linecap="round"/>
-              <path d="M 8 148 C 26 134,44 156,64 146 C 84 134,96 156,116 146 C 136 134,150 154,168 146 C 180 140,188 144,192 142" fill="none" stroke="#1a1a1a" stroke-width="3.5" stroke-linecap="round"/>
-            </g>
-            <text x="218" y="138" font-family="Georgia,'Times New Roman',serif" font-size="86" font-weight="700" letter-spacing="-3" fill="#1a1a1a">KBB</text>
-          </svg>
+          <img src="assets/kbblogo.png" alt="KBB Corp" class="footer-logo-img" />
           <p class="footer-tagline lang-en">Bridging Japan and the World.</p>
           <p class="footer-tagline lang-jp">日本と世界をつなぐ架け橋。</p>
         </div>

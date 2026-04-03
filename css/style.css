@@ -1616,3 +1616,35 @@ body[data-lang="jp"] p {
 .footer-legal-link:hover {
   color: #fff !important;
 }
+
+/* ══════════════════════════════════════════════════════════
+   FOOTER LOGO — INVERT FOR DARK BG
+══════════════════════════════════════════════════════════ */
+.footer-logo-img {
+  filter: brightness(0) invert(1);
+  opacity: 1 !important;
+}
+
+/* ══════════════════════════════════════════════════════════
+   FOOTER TEXT — BRIGHTER
+══════════════════════════════════════════════════════════ */
+.footer-tagline,
+.footer-col-label,
+.footer-copy,
+.footer-legal-link {
+  color: rgba(250,250,248,0.85) !important;
+}
+
+.footer-link {
+  color: rgba(250,250,248,0.75) !important;
+}
+
+.footer-link:hover,
+.footer-legal-link:hover {
+  color: #fff !important;
+}
+
+.footer-col-label {
+  color: #fff !important;
+  font-weight: 500;
+}

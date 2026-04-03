@@ -1710,3 +1710,25 @@ body[data-lang="jp"] p {
     margin-left: auto;
   }
 }
+
+/* ══════════════════════════════════════════════════════════
+   PHILOSOPHY STRIP — MOBILE DIVIDERS
+══════════════════════════════════════════════════════════ */
+@media (max-width: 640px) {
+  /* Remove the blanket border-bottom from previous rule */
+  .phil-item {
+    border-bottom: none;
+  }
+
+  /* Vertical divider: right border on left-column items (橋, 和) */
+  .philosophy-strip > div:nth-child(1),
+  .philosophy-strip > div:nth-child(5) {
+    border-right: 1px solid var(--border);
+  }
+
+  /* Horizontal divider: top border on bottom-row items (和, 道) */
+  .philosophy-strip > div:nth-child(5),
+  .philosophy-strip > div:nth-child(7) {
+    border-top: 1px solid var(--border);
+  }
+}

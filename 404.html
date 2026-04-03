@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ja" data-lang="jp">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 — KBB Corp</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Inter:wght@300;400&family=Noto+Serif+JP:wght@200;300;400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <style>
+    .page-404 {
+      min-height: 100svh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+      background: var(--cream);
+      gap: 0;
+    }
+
+    .page-404-logo {
+      height: 72px;
+      width: auto;
+      margin-bottom: 3rem;
+      opacity: 0.9;
+    }
+
+    .page-404-kanji {
+      font-family: var(--font-jp);
+      font-size: clamp(6rem, 20vw, 12rem);
+      font-weight: 200;
+      color: transparent;
+      -webkit-text-stroke: 1px rgba(0,0,0,0.08);
+      line-height: 1;
+      user-select: none;
+      margin-bottom: -1rem;
+    }
+
+    .page-404-num {
+      font-family: var(--font-display);
+      font-size: clamp(5rem, 15vw, 9rem);
+      font-weight: 300;
+      color: var(--ink);
+      line-height: 1;
+      letter-spacing: -0.02em;
+      margin-bottom: 1.5rem;
+    }
+
+    .page-404-num em {
+      color: var(--red);
+      font-style: normal;
+    }
+
+    .page-404-rule {
+      width: 48px;
+      height: 2px;
+      background: var(--red);
+      margin: 0 auto 1.75rem;
+    }
+
+    .page-404-title {
+      font-family: var(--font-display);
+      font-size: clamp(1.125rem, 3vw, 1.625rem);
+      font-weight: 300;
+      color: var(--ink);
+      margin-bottom: 0.75rem;
+    }
+
+    .page-404-sub {
+      font-size: 0.9375rem;
+      font-weight: 300;
+      color: var(--ink-light);
+      line-height: 1.7;
+      max-width: 360px;
+      margin-bottom: 3rem;
+    }
+
+    .page-404-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.8125rem;
+      font-weight: 400;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--ink);
+      border-bottom: 1px solid var(--red);
+      padding-bottom: 0.2rem;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+
+    .page-404-back:hover { color: var(--red); }
+
+    .page-404-footer {
+      position: absolute;
+      bottom: 2rem;
+      font-size: 0.6875rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--ink-light);
+      opacity: 0.5;
+    }
+  </style>
+</head>
+<body>
+  <div class="page-404">
+    <img src="assets/kbblogo.png" alt="KBB Corp" class="page-404-logo" />
+
+    <div class="page-404-kanji" aria-hidden="true">道</div>
+
+    <div class="page-404-num">4<em>0</em>4</div>
+
+    <div class="page-404-rule"></div>
+
+    <p class="page-404-title">ページが見つかりません</p>
+    <p class="page-404-sub">お探しのページは移動または削除された可能性があります。<br />The page you're looking for doesn't exist.</p>
+
+    <a href="/" class="page-404-back">← トップへ戻る &nbsp;/&nbsp; Return Home</a>
+
+    <span class="page-404-footer">© 2026 株式会社KBB</span>
+  </div>
+</body>
+</html>

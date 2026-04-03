@@ -1664,3 +1664,22 @@ body[data-lang="jp"] p {
   object-fit: contain;
   display: block;
 }
+
+/* ══════════════════════════════════════════════════════════
+   FONT SIZE BUMPS
+══════════════════════════════════════════════════════════ */
+.hero-kicker {
+  font-size: 1rem;
+}
+
+.label-num {
+  font-size: 0.9375rem;
+}
+
+.label-text {
+  font-size: 0.9375rem;
+}
+
+.nihonbashi-label {
+  font-size: 0.9375rem;
+}

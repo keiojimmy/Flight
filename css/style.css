@@ -1648,3 +1648,19 @@ body[data-lang="jp"] p {
   color: #fff !important;
   font-weight: 500;
 }
+
+/* ══════════════════════════════════════════════════════════
+   MISSION SECTION — ACCENT CIRCLE WITH LOGO
+══════════════════════════════════════════════════════════ */
+.about-accent-circle {
+  overflow: hidden;
+  background: transparent;
+  border: none;
+}
+
+.about-accent-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}

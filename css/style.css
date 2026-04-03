@@ -1235,3 +1235,254 @@ body[data-lang="jp"] p {
   .phil-item { flex: 0 0 100%; }
   .phil-divider { display: none; }
 }
+
+/* ══════════════════════════════════════════════════════════
+   SVG LOGO
+══════════════════════════════════════════════════════════ */
+.logo-svg {
+  width: auto;
+  height: 44px;
+  display: block;
+}
+
+.footer-logo-svg {
+  width: auto;
+  height: 56px;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+/* ══════════════════════════════════════════════════════════
+   SERVICES GRID — 3 columns
+══════════════════════════════════════════════════════════ */
+.services-grid--3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+@media (max-width: 900px) {
+  .services-grid--3 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ══════════════════════════════════════════════════════════
+   NIHONBASHI HERITAGE SECTION
+══════════════════════════════════════════════════════════ */
+.nihonbashi-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 540px;
+  overflow: hidden;
+}
+
+.nihonbashi-art {
+  position: relative;
+  overflow: hidden;
+  background: var(--paper-dark);
+}
+
+.nihonbashi-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform 0.8s var(--ease-silk);
+}
+
+.nihonbashi-art:hover .nihonbashi-img {
+  transform: scale(1.03);
+}
+
+.nihonbashi-caption {
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  font-size: 0.6875rem;
+  letter-spacing: 0.1em;
+  color: rgba(255,255,255,0.75);
+  background: rgba(0,0,0,0.4);
+  padding: 0.35rem 0.75rem;
+  backdrop-filter: blur(4px);
+}
+
+.nihonbashi-text {
+  background: var(--paper);
+  padding: clamp(3rem, 6vw, 6rem) clamp(2rem, 5vw, 5rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-left: 1px solid var(--border);
+}
+
+.nihonbashi-label {
+  font-size: 0.6875rem;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--red);
+  margin-bottom: 1.5rem;
+}
+
+.nihonbashi-quote {
+  font-family: var(--font-display);
+  font-size: clamp(1.125rem, 2.2vw, 1.5rem);
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.6;
+  color: var(--ink);
+  border-left: 3px solid var(--red);
+  padding-left: 1.5rem;
+  margin-bottom: 1.75rem;
+}
+
+.nihonbashi-body {
+  font-size: 0.9375rem;
+  line-height: 1.8;
+  color: var(--ink-mid);
+}
+
+@media (max-width: 768px) {
+  .nihonbashi-section {
+    grid-template-columns: 1fr;
+  }
+  .nihonbashi-art {
+    min-height: 300px;
+  }
+}
+
+/* ══════════════════════════════════════════════════════════
+   CTA STRIP
+══════════════════════════════════════════════════════════ */
+.cta-strip {
+  background: var(--ink);
+  padding: clamp(3rem, 6vw, 5rem) 0;
+}
+
+.cta-strip-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.cta-strip-text {
+  font-family: var(--font-display);
+  font-size: clamp(1.25rem, 3vw, 2rem);
+  font-weight: 300;
+  font-style: italic;
+  color: var(--cream);
+  max-width: 600px;
+  line-height: 1.4;
+}
+
+.cta-strip .btn-primary {
+  background: var(--red);
+  color: #fff;
+  border-color: var(--red);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.cta-strip .btn-primary:hover {
+  background: var(--red-hover);
+  border-color: var(--red-hover);
+}
+
+/* ══════════════════════════════════════════════════════════
+   COMPANY OVERVIEW
+══════════════════════════════════════════════════════════ */
+.company-section {
+  background: var(--cream);
+}
+
+.company-grid {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: clamp(3rem, 6vw, 6rem);
+  align-items: start;
+}
+
+.company-sub {
+  font-size: 0.875rem;
+  letter-spacing: 0.1em;
+  color: var(--ink-light);
+  margin-top: 1rem;
+  font-family: var(--font-body);
+  font-weight: 300;
+}
+
+.company-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.company-table tr {
+  border-bottom: 1px solid var(--border);
+}
+
+.company-table tr:first-child {
+  border-top: 1px solid var(--border);
+}
+
+.company-table th {
+  width: 140px;
+  padding: 1.25rem 1rem 1.25rem 0;
+  text-align: left;
+  font-weight: 500;
+  font-size: 0.8125rem;
+  letter-spacing: 0.06em;
+  color: var(--ink-mid);
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+.company-table td {
+  padding: 1.25rem 0;
+  color: var(--ink);
+  line-height: 1.7;
+  vertical-align: top;
+}
+
+.company-biz-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.company-biz-list li {
+  padding: 0.2rem 0 0.2rem 1.25rem;
+  position: relative;
+  font-size: 0.875rem;
+  line-height: 1.65;
+  color: var(--ink-mid);
+}
+
+.company-biz-list li::before {
+  content: '·';
+  position: absolute;
+  left: 0;
+  color: var(--red);
+  font-weight: 700;
+}
+
+@media (max-width: 860px) {
+  .company-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .company-table th {
+    display: none;
+  }
+  .company-table td {
+    padding: 1rem 0;
+  }
+  .company-table tr {
+    display: block;
+    padding: 0.5rem 0;
+  }
+}

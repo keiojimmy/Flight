@@ -16,28 +16,59 @@
   <header class="nav-header" id="nav-header">
     <div class="nav-inner">
 
-      <a href="#hero" class="nav-logo">
-        <span class="logo-kbb">KBB</span>
-        <span class="logo-sub lang-en">Corporation</span>
-        <span class="logo-sub lang-jp">株式会社</span>
+      <a href="#hero" class="nav-logo" aria-label="KBB Corp">
+        <svg class="logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 200" role="img" aria-label="KBB Corp logo">
+          <circle cx="100" cy="100" r="92" fill="#fff" stroke="#1a1a1a" stroke-width="5"/>
+          <clipPath id="logoClip"><circle cx="100" cy="100" r="89"/></clipPath>
+          <!-- Red arch bridge -->
+          <path d="M 14 93 C 14 32 186 32 186 93" fill="none" stroke="#BE1E2D" stroke-width="8" stroke-linecap="round"/>
+          <rect x="14" y="89" width="172" height="6" fill="#BE1E2D"/>
+          <line x1="30" y1="65" x2="30" y2="89" stroke="#BE1E2D" stroke-width="5"/>
+          <line x1="51" y1="47" x2="51" y2="89" stroke="#BE1E2D" stroke-width="5"/>
+          <line x1="74" y1="36" x2="74" y2="89" stroke="#BE1E2D" stroke-width="5"/>
+          <line x1="100" y1="32" x2="100" y2="89" stroke="#BE1E2D" stroke-width="5"/>
+          <line x1="126" y1="36" x2="126" y2="89" stroke="#BE1E2D" stroke-width="5"/>
+          <line x1="149" y1="47" x2="149" y2="89" stroke="#BE1E2D" stroke-width="5"/>
+          <line x1="170" y1="65" x2="170" y2="89" stroke="#BE1E2D" stroke-width="5"/>
+          <!-- Japanese waves -->
+          <g clip-path="url(#logoClip)">
+            <path d="M 10 107 C 22 97,34 117,48 107 C 62 97,74 117,88 107 C 102 97,114 117,128 107 C 142 97,154 117,168 107 C 180 99,188 106,190 104" fill="none" stroke="#1a1a1a" stroke-width="3" stroke-linecap="round"/>
+            <path d="M 10 107 C 12 101,19 99,22 97" fill="none" stroke="#1a1a1a" stroke-width="2.5"/>
+            <path d="M 88 107 C 90 101,97 99,102 97" fill="none" stroke="#1a1a1a" stroke-width="2.5"/>
+            <path d="M 168 107 C 170 101,177 99,180 99" fill="none" stroke="#1a1a1a" stroke-width="2.5"/>
+            <circle cx="52" cy="112" r="2.5" fill="#1a1a1a"/>
+            <circle cx="100" cy="110" r="2" fill="#1a1a1a"/>
+            <circle cx="148" cy="112" r="2.5" fill="#1a1a1a"/>
+            <path d="M 12 126 C 26 114,40 136,56 126 C 72 114,84 136,100 126 C 116 114,128 136,144 126 C 160 114,172 134,184 126" fill="none" stroke="#1a1a1a" stroke-width="3" stroke-linecap="round"/>
+            <path d="M 12 126 C 14 118,22 116,26 114" fill="none" stroke="#1a1a1a" stroke-width="2.5"/>
+            <path d="M 100 126 C 102 118,110 116,116 114" fill="none" stroke="#1a1a1a" stroke-width="2.5"/>
+            <circle cx="64" cy="132" r="2" fill="#1a1a1a"/>
+            <circle cx="130" cy="130" r="2" fill="#1a1a1a"/>
+            <path d="M 8 148 C 26 134,44 156,64 146 C 84 134,96 156,116 146 C 136 134,150 154,168 146 C 180 140,188 144,192 142" fill="none" stroke="#1a1a1a" stroke-width="3.5" stroke-linecap="round"/>
+            <path d="M 8 148 C 11 138,22 136,26 134" fill="none" stroke="#1a1a1a" stroke-width="3"/>
+            <path d="M 116 146 C 119 136,130 134,136 134" fill="none" stroke="#1a1a1a" stroke-width="3"/>
+            <circle cx="26" cy="137" r="2.5" fill="#1a1a1a"/>
+            <circle cx="28" cy="132" r="1.5" fill="#1a1a1a"/>
+            <circle cx="136" cy="137" r="2.5" fill="#1a1a1a"/>
+            <circle cx="138" cy="132" r="1.5" fill="#1a1a1a"/>
+          </g>
+          <!-- KBB text -->
+          <text x="218" y="138" font-family="Georgia,'Times New Roman',serif" font-size="86" font-weight="700" letter-spacing="-3" fill="#1a1a1a">KBB</text>
+        </svg>
       </a>
 
       <nav class="nav-links" role="navigation">
-        <a href="#about" class="nav-link">
-          <span class="lang-en">About</span>
-          <span class="lang-jp">会社概要</span>
+        <a href="#mission" class="nav-link">
+          <span class="lang-en">Mission</span>
+          <span class="lang-jp">ミッション</span>
         </a>
         <a href="#services" class="nav-link">
           <span class="lang-en">Services</span>
-          <span class="lang-jp">サービス</span>
+          <span class="lang-jp">事業内容</span>
         </a>
-        <a href="#approach" class="nav-link">
-          <span class="lang-en">Approach</span>
-          <span class="lang-jp">アプローチ</span>
-        </a>
-        <a href="#insights" class="nav-link">
-          <span class="lang-en">Insights</span>
-          <span class="lang-jp">インサイト</span>
+        <a href="#company" class="nav-link">
+          <span class="lang-en">About</span>
+          <span class="lang-jp">会社概要</span>
         </a>
         <a href="#contact" class="nav-link">
           <span class="lang-en">Contact</span>
@@ -62,21 +93,17 @@
   <!-- Mobile Nav Overlay -->
   <div class="mobile-nav" id="mobile-nav">
     <nav class="mobile-nav-links">
-      <a href="#about" class="mobile-nav-link">
-        <span class="lang-en">About</span>
-        <span class="lang-jp">会社概要</span>
+      <a href="#mission" class="mobile-nav-link">
+        <span class="lang-en">Mission</span>
+        <span class="lang-jp">ミッション</span>
       </a>
       <a href="#services" class="mobile-nav-link">
         <span class="lang-en">Services</span>
-        <span class="lang-jp">サービス</span>
+        <span class="lang-jp">事業内容</span>
       </a>
-      <a href="#approach" class="mobile-nav-link">
-        <span class="lang-en">Approach</span>
-        <span class="lang-jp">アプローチ</span>
-      </a>
-      <a href="#insights" class="mobile-nav-link">
-        <span class="lang-en">Insights</span>
-        <span class="lang-jp">インサイト</span>
+      <a href="#company" class="mobile-nav-link">
+        <span class="lang-en">About</span>
+        <span class="lang-jp">会社概要</span>
       </a>
       <a href="#contact" class="mobile-nav-link">
         <span class="lang-en">Contact</span>
@@ -89,7 +116,7 @@
 
     <!-- ═══════════════════════════════════ HERO ═══════════════════════════════════ -->
     <section id="hero" class="hero">
-      <div class="hero-bg-text" aria-hidden="true">戦略</div>
+      <div class="hero-bg-text" aria-hidden="true">橋</div>
       <div class="hero-inner">
         <div class="hero-kicker">
           <span class="kicker-line"></span>
@@ -99,24 +126,24 @@
 
         <h1 class="hero-headline">
           <span class="lang-en">
-            <em>Where East</em><br />
-            meets strategy.
+            <em>The bridge</em><br />
+            Japan's best<br />deserves.
           </span>
           <span class="lang-jp">
-            <em>東西の知恵を</em><br />
-            融合する。
+            <em>魅力を届ける</em><br />
+            架け橋に。
           </span>
         </h1>
 
         <p class="hero-sub">
-          <span class="lang-en">Precision consulting for the companies shaping tomorrow — rooted in Japan, reaching the world.</span>
-          <span class="lang-jp">明日を形作る企業のための精密なコンサルティング — 日本に根ざし、世界へ広がる。</span>
+          <span class="lang-en">We act as a creative and strategic bridge between Japan and the world — leveraging our experience and network to elevate brands, ideas, and experiences that deserve global attention.</span>
+          <span class="lang-jp">日本の魅力的なヒト・モノ・コトを、グローバルなネットワークと経験を活かして、新しい形で世界に届けるお手伝いがしたい。私たちは、ブランドや地域、個人のポテンシャルを引き出す「架け橋」を目指します。</span>
         </p>
 
         <div class="hero-cta">
-          <a href="#about" class="btn-primary">
-            <span class="lang-en">Discover our work</span>
-            <span class="lang-jp">私たちの仕事を知る</span>
+          <a href="#services" class="btn-primary">
+            <span class="lang-en">Our Services</span>
+            <span class="lang-jp">事業内容を見る</span>
           </a>
           <a href="#contact" class="btn-ghost">
             <span class="lang-en">Get in touch</span>
@@ -132,13 +159,19 @@
       </div>
 
       <div class="hero-side-text" aria-hidden="true">
-        <span class="lang-en">EST. 2010 — TOKYO, JAPAN</span>
-        <span class="lang-jp">2010年創業 ― 東京</span>
+        <span class="lang-en">EST. 2025 — MINAMI AOYAMA, TOKYO</span>
+        <span class="lang-jp">2025年設立 ― 東京都港区南青山</span>
       </div>
     </section>
 
     <!-- ═══════════════════════════════════ PHILOSOPHY STRIP ═══════════════════════════════════ -->
     <div class="philosophy-strip">
+      <div class="phil-item">
+        <span class="phil-kanji">橋</span>
+        <span class="phil-label lang-en">The Bridge</span>
+        <span class="phil-label lang-jp">架け橋</span>
+      </div>
+      <div class="phil-divider" aria-hidden="true"></div>
       <div class="phil-item">
         <span class="phil-kanji">誠</span>
         <span class="phil-label lang-en">Integrity</span>
@@ -146,44 +179,37 @@
       </div>
       <div class="phil-divider" aria-hidden="true"></div>
       <div class="phil-item">
-        <span class="phil-kanji">道</span>
-        <span class="phil-label lang-en">Direction</span>
-        <span class="phil-label lang-jp">方向性</span>
-      </div>
-      <div class="phil-divider" aria-hidden="true"></div>
-      <div class="phil-item">
-        <span class="phil-kanji">間</span>
+        <span class="phil-kanji">和</span>
         <span class="phil-label lang-en">Harmony</span>
         <span class="phil-label lang-jp">調和</span>
       </div>
       <div class="phil-divider" aria-hidden="true"></div>
       <div class="phil-item">
-        <span class="phil-kanji">革</span>
-        <span class="phil-label lang-en">Innovation</span>
-        <span class="phil-label lang-jp">革新</span>
+        <span class="phil-kanji">道</span>
+        <span class="phil-label lang-en">Direction</span>
+        <span class="phil-label lang-jp">道筋</span>
       </div>
     </div>
 
-    <!-- ═══════════════════════════════════ ABOUT ═══════════════════════════════════ -->
-    <section id="about" class="section about-section">
+    <!-- ═══════════════════════════════════ MISSION ═══════════════════════════════════ -->
+    <section id="mission" class="section about-section">
       <div class="container">
         <div class="section-label">
           <span class="label-num">01</span>
-          <span class="label-text lang-en">About</span>
-          <span class="label-text lang-jp">会社概要</span>
+          <span class="label-text lang-en">Mission</span>
+          <span class="label-text lang-jp">ミッション</span>
         </div>
 
         <div class="about-grid">
           <div class="about-headline-col">
             <h2 class="section-headline">
               <span class="lang-en">
-                Precision at the<br />
-                intersection of<br />
-                <em>cultures.</em>
+                A bridge to<br />bring Japan's<br />
+                <em>best to the world.</em>
               </span>
               <span class="lang-jp">
-                文化の交差点に<br />
-                宿る<em>精密さ。</em>
+                魅力を届ける<br />
+                <em>架け橋に。</em>
               </span>
             </h2>
             <div class="about-accent-circle" aria-hidden="true"></div>
@@ -191,36 +217,18 @@
 
           <div class="about-content-col">
             <p class="about-lead lang-en">
-              KBB Corp is a Tokyo-based management consulting firm built at the confluence of Japanese discipline and global ambition. We work with corporations navigating complex transformations — from boardroom strategy to market execution.
+              We act as a creative and strategic bridge between Japan and the world — leveraging our experience and global network to elevate brands, ideas, and experiences that deserve international attention.
             </p>
             <p class="about-lead lang-jp">
-              KBBコーポレーションは、日本の規律とグローバルな野心の交差点に設立された東京発のマネジメントコンサルティングファームです。経営戦略から市場実行まで、複雑な変革を乗り越える企業を支援します。
+              日本の魅力的なヒト・モノ・コトを、グローバルなネットワークと経験を活かして、新しい形で世界に届けるお手伝いがしたい。
             </p>
 
             <p class="about-body lang-en">
-              Founded in 2010, we have advised over 200 organizations across Japan, Southeast Asia, Europe, and North America. Our consultants bring together the rigor of Western frameworks with the long-view thinking inherent to Japanese business culture.
+              We aspire to be the "bridge" that draws out the potential of brands, regions, and individuals. Whether it's a local artisan, a regional product, or a cultural experience — if it has soul, we help it find its global audience.
             </p>
             <p class="about-body lang-jp">
-              2010年の創業以来、日本・東南アジア・欧州・北米の200社以上にアドバイスを提供してまいりました。当社のコンサルタントは、西洋的フレームワークの厳密さと、日本のビジネス文化に固有の長期的視点を融合しています。
+              私たちは、ブランドや地域、個人のポテンシャルを引き出す「架け橋」を目指します。日本のひと・もの・ことが持つ本来の価値を、世界に伝えるために。
             </p>
-
-            <div class="about-stats">
-              <div class="stat">
-                <span class="stat-num">200<span class="stat-plus">+</span></span>
-                <span class="stat-label lang-en">Clients served</span>
-                <span class="stat-label lang-jp">クライアント数</span>
-              </div>
-              <div class="stat">
-                <span class="stat-num">15</span>
-                <span class="stat-label lang-en">Years of excellence</span>
-                <span class="stat-label lang-jp">年の実績</span>
-              </div>
-              <div class="stat">
-                <span class="stat-num">12</span>
-                <span class="stat-label lang-en">Countries reached</span>
-                <span class="stat-label lang-jp">対応国数</span>
-              </div>
-            </div>
           </div>
         </div>
       </div>
@@ -237,29 +245,29 @@
 
         <div class="services-header">
           <h2 class="section-headline">
-            <span class="lang-en">What we do <em>exceptionally well.</em></span>
-            <span class="lang-jp">私たちが<em>卓越している</em>こと。</span>
+            <span class="lang-en">Three ways we <em>bridge the gap.</em></span>
+            <span class="lang-jp">三つの<em>架け橋</em>で、世界をつなぐ。</span>
           </h2>
         </div>
 
-        <div class="services-grid">
+        <div class="services-grid services-grid--3">
 
           <div class="service-card" data-index="01">
             <div class="service-num" aria-hidden="true">一</div>
             <div class="service-body">
               <h3 class="service-title">
-                <span class="lang-en">Management Strategy</span>
-                <span class="lang-jp">経営戦略</span>
+                <span class="lang-en">Consulting</span>
+                <span class="lang-jp">コンサルティング事業</span>
               </h3>
               <p class="service-desc lang-en">
-                Corporate strategy design, competitive positioning, and long-range planning grounded in deep market intelligence and Japanese consensus-building methods.
+                We provide tailored consulting that closely addresses the challenges faced by business operators — from management strategy and marketing to international expansion — helping resolve issues and drive sustainable growth.
               </p>
               <p class="service-desc lang-jp">
-                深い市場インテリジェンスと日本的合意形成手法に基づく、コーポレート戦略設計・競争ポジショニング・長期計画の策定。
+                事業者様のお困りごとに寄り添うきめ細やかなコンサルティングにより、事業における課題解決をお手伝いします。経営戦略・マーケティング・海外展開など、多岐にわたる分野で伴走します。
               </p>
               <a href="#contact" class="service-link">
-                <span class="lang-en">Explore →</span>
-                <span class="lang-jp">詳細 →</span>
+                <span class="lang-en">Enquire →</span>
+                <span class="lang-jp">詳細を見る →</span>
               </a>
             </div>
           </div>
@@ -268,18 +276,18 @@
             <div class="service-num" aria-hidden="true">二</div>
             <div class="service-body">
               <h3 class="service-title">
-                <span class="lang-en">Global Market Entry</span>
-                <span class="lang-jp">海外市場参入</span>
+                <span class="lang-en">Trade &amp; Export</span>
+                <span class="lang-jp">貿易事業</span>
               </h3>
               <p class="service-desc lang-en">
-                End-to-end support for Japanese companies expanding internationally and foreign companies entering the Japanese market — navigating regulation, culture, and competition.
+                We deliver Japan's finest products — food, beverages, crafts, and goods cultivated with care within the country — to the world through our trusted and reliable logistics network.
               </p>
               <p class="service-desc lang-jp">
-                海外展開を目指す日本企業、および日本市場参入を目指す外資企業に対する規制・文化・競合環境のナビゲーションを含む包括的支援。
+                日本国内で生み出され、育てられてきた価値あるものを、信頼できる物流網により世界にお届けします。食品・酒類・雑貨など、日本の本物をグローバルへ。
               </p>
               <a href="#contact" class="service-link">
-                <span class="lang-en">Explore →</span>
-                <span class="lang-jp">詳細 →</span>
+                <span class="lang-en">Enquire →</span>
+                <span class="lang-jp">詳細を見る →</span>
               </a>
             </div>
           </div>
@@ -288,38 +296,18 @@
             <div class="service-num" aria-hidden="true">三</div>
             <div class="service-body">
               <h3 class="service-title">
-                <span class="lang-en">Corporate Advisory</span>
-                <span class="lang-jp">コーポレートアドバイザリー</span>
+                <span class="lang-en">Inbound Tourism</span>
+                <span class="lang-jp">インバウンド向け事業</span>
               </h3>
               <p class="service-desc lang-en">
-                Board-level advisory, M&A due diligence, governance restructuring, and executive leadership consulting for organizations at critical inflection points.
+                Our expert tour guides introduce visitors to Japan's people, nature, and culture — crafting authentic, meaningful experiences that connect hearts to the true soul of Japan.
               </p>
               <p class="service-desc lang-jp">
-                重要な変曲点にある企業へのボードレベルのアドバイザリー、M&Aデューデリジェンス、ガバナンス再構築、エグゼクティブリーダーシップコンサルティング。
+                ツアーガイドにより、日本を訪れる人々にひと・自然・文化の魅力を伝えます。地域観光・文化体験のツアー企画、運営、ガイドマッチングまで一貫して対応します。
               </p>
               <a href="#contact" class="service-link">
-                <span class="lang-en">Explore →</span>
-                <span class="lang-jp">詳細 →</span>
-              </a>
-            </div>
-          </div>
-
-          <div class="service-card" data-index="04">
-            <div class="service-num" aria-hidden="true">四</div>
-            <div class="service-body">
-              <h3 class="service-title">
-                <span class="lang-en">Organizational Design</span>
-                <span class="lang-jp">組織設計</span>
-              </h3>
-              <p class="service-desc lang-en">
-                Structural redesign, talent strategy, and cultural transformation — building organizations that endure through disciplined people-first frameworks.
-              </p>
-              <p class="service-desc lang-jp">
-                組織構造の再設計、タレント戦略、文化変革 — 規律ある人間中心のフレームワークを通じて、持続可能な組織を構築します。
-              </p>
-              <a href="#contact" class="service-link">
-                <span class="lang-en">Explore →</span>
-                <span class="lang-jp">詳細 →</span>
+                <span class="lang-en">Enquire →</span>
+                <span class="lang-jp">詳細を見る →</span>
               </a>
             </div>
           </div>
@@ -328,164 +316,130 @@
       </div>
     </section>
 
-    <!-- ═══════════════════════════════════ APPROACH ═══════════════════════════════════ -->
-    <section id="approach" class="section approach-section">
-      <div class="container">
-        <div class="section-label">
-          <span class="label-num">03</span>
-          <span class="label-text lang-en">Approach</span>
-          <span class="label-text lang-jp">アプローチ</span>
-        </div>
-
-        <div class="approach-intro">
-          <h2 class="section-headline">
-            <span class="lang-en">A method forged in<br /><em>two worlds.</em></span>
-            <span class="lang-jp">二つの世界で<br /><em>磨かれた手法。</em></span>
-          </h2>
-          <p class="approach-intro-text lang-en">
-            We reject the one-size-fits-all consulting model. Every engagement begins with deep listening — a practice we call <em>傾聴 (keichō)</em> — before any strategy is formed.
-          </p>
-          <p class="approach-intro-text lang-jp">
-            画一的なコンサルティングモデルを否定します。すべてのエンゲージメントは、戦略を形成する前に、私たちが「傾聴」と呼ぶ深いリスニングから始まります。
-          </p>
-        </div>
-
-        <div class="approach-steps">
-          <div class="approach-step reveal">
-            <div class="step-num">01</div>
-            <div class="step-content">
-              <h3 class="step-title">
-                <span class="lang-en">Listen & Understand</span>
-                <span class="lang-jp">傾聴と理解</span>
-              </h3>
-              <p class="step-desc lang-en">We immerse ourselves in your business, culture, and competitive environment before drawing any conclusions. No templates. No assumptions.</p>
-              <p class="step-desc lang-jp">いかなる結論を出す前に、お客様のビジネス・文化・競合環境に深く没入します。テンプレートなし。思い込みなし。</p>
-            </div>
-          </div>
-
-          <div class="approach-step reveal">
-            <div class="step-num">02</div>
-            <div class="step-content">
-              <h3 class="step-title">
-                <span class="lang-en">Analyze & Synthesize</span>
-                <span class="lang-jp">分析と統合</span>
-              </h3>
-              <p class="step-desc lang-en">Quantitative rigor meets qualitative depth. We synthesize data with cultural intelligence to uncover insights that data alone cannot reveal.</p>
-              <p class="step-desc lang-jp">定量的厳密さと定性的深さの融合。データと文化的インテリジェンスを統合し、データだけでは見えないインサイトを明らかにします。</p>
-            </div>
-          </div>
-
-          <div class="approach-step reveal">
-            <div class="step-num">03</div>
-            <div class="step-content">
-              <h3 class="step-title">
-                <span class="lang-en">Design & Co-create</span>
-                <span class="lang-jp">設計と共創</span>
-              </h3>
-              <p class="step-desc lang-en">Strategy is built with your team, not delivered to them. This ensures alignment, ownership, and durable results from day one of implementation.</p>
-              <p class="step-desc lang-jp">戦略はあなたのチームと共に構築されます。これにより、実施初日からの整合性、オーナーシップ、持続的な成果を確保します。</p>
-            </div>
-          </div>
-
-          <div class="approach-step reveal">
-            <div class="step-num">04</div>
-            <div class="step-content">
-              <h3 class="step-title">
-                <span class="lang-en">Execute & Refine</span>
-                <span class="lang-jp">実行と改善</span>
-              </h3>
-              <p class="step-desc lang-en">We remain partners through execution — monitoring, learning, and refining in real time. A commitment inherited from the Japanese principle of <em>改善 (kaizen)</em>.</p>
-              <p class="step-desc lang-jp">実行を通じてパートナーであり続け、リアルタイムで監視・学習・改善します。日本の改善の精神から受け継いだコミットメントです。</p>
-            </div>
-          </div>
+    <!-- ═══════════════════════════════════ NIHONBASHI HERITAGE ═══════════════════════════════════ -->
+    <section class="nihonbashi-section">
+      <div class="nihonbashi-art">
+        <img src="assets/nihonbashi.jpg" alt="東海道五十三次 日本橋 — Hiroshige, Edo period woodblock print" class="nihonbashi-img" />
+        <div class="nihonbashi-caption" aria-hidden="true">
+          <span class="lang-en">Nihonbashi — Hiroshige, Fifty-three Stations of the Tōkaidō</span>
+          <span class="lang-jp">東海道五十三次・日本橋 — 歌川広重</span>
         </div>
       </div>
-    </section>
-
-    <!-- ═══════════════════════════════════ QUOTE BREAK ═══════════════════════════════════ -->
-    <div class="quote-break">
-      <div class="container">
-        <blockquote class="pullquote">
-          <span class="quote-mark" aria-hidden="true">"</span>
-          <p class="lang-en">The best strategy is the one your organization can actually execute — with conviction, clarity, and care.</p>
-          <p class="lang-jp">最良の戦略とは、組織が確信・明確さ・誠実さをもって実際に実行できるものです。</p>
-          <footer class="quote-attribution">
-            <span class="lang-en">— KBB Corp Philosophy</span>
-            <span class="lang-jp">― KBBコーポレーション フィロソフィー</span>
-          </footer>
+      <div class="nihonbashi-text">
+        <div class="nihonbashi-label lang-en">The Spirit of Nihonbashi</div>
+        <div class="nihonbashi-label lang-jp">日本橋の精神</div>
+        <blockquote class="nihonbashi-quote">
+          <p class="lang-en">In the Edo period, Nihonbashi was the starting point of all five major highways — a vital hub of land and water trade that flourished as the centre of Japan's commercial world.</p>
+          <p class="lang-jp">江戸時代の日本橋は、五街道の起点であり、水陸交通の要衝として、日本の物流の中心地として栄えた。</p>
         </blockquote>
+        <p class="nihonbashi-body lang-en">This is the spirit that animates KBB Corp. Like Nihonbashi, we stand at the point where all roads meet — connecting Japan's finest people, products, and culture to the wider world with intention and care.</p>
+        <p class="nihonbashi-body lang-jp">その精神が、私たちKBBコーポレーションの礎です。日本橋のように、すべての道が交わる場所に立ち、日本の優れたヒト・モノ・コトを、誠実さと想いをもって世界へつなぎます。</p>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════ CTA STRIP ═══════════════════════════════════ -->
+    <div class="cta-strip">
+      <div class="container cta-strip-inner">
+        <p class="cta-strip-text">
+          <span class="lang-en">Walking alongside you — overcoming every challenge, together.</span>
+          <span class="lang-jp">事業者様の思いに寄り添い、共に困難を乗り越える。</span>
+        </p>
+        <a href="#contact" class="btn-primary">
+          <span class="lang-en">Contact Us</span>
+          <span class="lang-jp">問い合わせる</span>
+        </a>
       </div>
     </div>
 
-    <!-- ═══════════════════════════════════ INSIGHTS ═══════════════════════════════════ -->
-    <section id="insights" class="section insights-section">
+    <!-- ═══════════════════════════════════ COMPANY OVERVIEW ═══════════════════════════════════ -->
+    <section id="company" class="section company-section">
       <div class="container">
         <div class="section-label">
           <span class="label-num">04</span>
-          <span class="label-text lang-en">Insights</span>
-          <span class="label-text lang-jp">インサイト</span>
+          <span class="label-text lang-en">Company</span>
+          <span class="label-text lang-jp">会社概要</span>
         </div>
 
-        <div class="insights-header">
-          <h2 class="section-headline">
-            <span class="lang-en">Perspectives on<br /><em>what matters.</em></span>
-            <span class="lang-jp">重要なことへの<br /><em>視点。</em></span>
-          </h2>
-          <a href="#" class="insights-all-link">
-            <span class="lang-en">View all insights →</span>
-            <span class="lang-jp">全てのインサイトを見る →</span>
-          </a>
-        </div>
+        <div class="company-grid">
+          <div class="company-headline-col">
+            <h2 class="section-headline">
+              <span class="lang-en">株式会社<br /><em>KBB</em></span>
+              <span class="lang-jp">株式会社<br /><em>KBB</em></span>
+            </h2>
+            <p class="company-sub lang-en">KBB Co., Ltd.</p>
+            <p class="company-sub lang-jp">英文表記：KBB Co., Ltd.</p>
+          </div>
 
-        <div class="insights-grid">
-
-          <article class="insight-card insight-featured reveal">
-            <div class="insight-tag lang-en">Strategy</div>
-            <div class="insight-tag lang-jp">戦略</div>
-            <h3 class="insight-title">
-              <span class="lang-en">Why Japan's Quiet Companies Are Outpacing the Noise</span>
-              <span class="lang-jp">日本の静かな企業がノイズを超えて成長する理由</span>
-            </h3>
-            <p class="insight-excerpt lang-en">The long-view philosophy embedded in Japanese corporate culture is proving to be a decisive advantage in an era of short-termism.</p>
-            <p class="insight-excerpt lang-jp">日本の企業文化に根付いた長期的視点の哲学が、短期主義の時代において決定的な優位性となっています。</p>
-            <div class="insight-meta">
-              <span class="insight-date lang-en">March 2025</span>
-              <span class="insight-date lang-jp">2025年3月</span>
-              <span class="insight-read lang-en">8 min read</span>
-              <span class="insight-read lang-jp">8分読み</span>
-            </div>
-          </article>
-
-          <article class="insight-card reveal">
-            <div class="insight-tag lang-en">Market Entry</div>
-            <div class="insight-tag lang-jp">市場参入</div>
-            <h3 class="insight-title">
-              <span class="lang-en">The Hidden Costs of Entering Japan Without a Cultural Framework</span>
-              <span class="lang-jp">文化的フレームワークなしに日本市場に参入する際の隠れたコスト</span>
-            </h3>
-            <div class="insight-meta">
-              <span class="insight-date lang-en">February 2025</span>
-              <span class="insight-date lang-jp">2025年2月</span>
-              <span class="insight-read lang-en">6 min read</span>
-              <span class="insight-read lang-jp">6分読み</span>
-            </div>
-          </article>
-
-          <article class="insight-card reveal">
-            <div class="insight-tag lang-en">Leadership</div>
-            <div class="insight-tag lang-jp">リーダーシップ</div>
-            <h3 class="insight-title">
-              <span class="lang-en">Ringi-sho in the Age of Speed: Adapting Japanese Consensus for Global Teams</span>
-              <span class="lang-jp">スピードの時代における稟議書：グローバルチームへの日本的合意の適応</span>
-            </h3>
-            <div class="insight-meta">
-              <span class="insight-date lang-en">January 2025</span>
-              <span class="insight-date lang-jp">2025年1月</span>
-              <span class="insight-read lang-en">5 min read</span>
-              <span class="insight-read lang-jp">5分読み</span>
-            </div>
-          </article>
-
+          <div class="company-table-col">
+            <table class="company-table">
+              <tbody>
+                <tr>
+                  <th class="lang-en">Company Name</th>
+                  <th class="lang-jp">会社名</th>
+                  <td>
+                    <span class="lang-en">KBB Co., Ltd. (株式会社KBB)</span>
+                    <span class="lang-jp">株式会社KBB（英文表記：KBB Co., Ltd.）</span>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="lang-en">Representatives</th>
+                  <th class="lang-jp">代表者名</th>
+                  <td>Cho Sungbum &nbsp;／&nbsp; 日上 健太</td>
+                </tr>
+                <tr>
+                  <th class="lang-en">Headquarters</th>
+                  <th class="lang-jp">本社所在地</th>
+                  <td>
+                    <span class="lang-en">Aoyama Marutake Bldg. 6F, 3-1-36 Minami-Aoyama, Minato-ku, Tokyo 〒150-0021</span>
+                    <span class="lang-jp">〒150-0021 東京都港区南青山3-1-36 青山丸竹ビル6F</span>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="lang-en">Established</th>
+                  <th class="lang-jp">設立</th>
+                  <td>
+                    <span class="lang-en">April 2025</span>
+                    <span class="lang-jp">令和7年4月</span>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="lang-en">Capital</th>
+                  <th class="lang-jp">資本金</th>
+                  <td>
+                    <span class="lang-en">¥1,000,000</span>
+                    <span class="lang-jp">100万円</span>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="lang-en">Corporate No.</th>
+                  <th class="lang-jp">法人番号</th>
+                  <td>2010401190081</td>
+                </tr>
+                <tr>
+                  <th class="lang-en">Business</th>
+                  <th class="lang-jp">事業内容</th>
+                  <td>
+                    <ul class="company-biz-list lang-en">
+                      <li>Management strategy, marketing &amp; international expansion consulting</li>
+                      <li>Import/export and sales of food, beverages, general goods</li>
+                      <li>Planning &amp; operation of restaurants, retail, and physical stores</li>
+                      <li>Planning &amp; operation of e-commerce and online stores</li>
+                      <li>Regional tourism &amp; cultural experience tour planning, guide matching</li>
+                      <li>Brand development, product planning, design &amp; distribution support</li>
+                    </ul>
+                    <ul class="company-biz-list lang-jp">
+                      <li>経営戦略、マーケティング、海外展開等に関するコンサルティング業</li>
+                      <li>食品、酒類、雑貨等の輸出入、販売及びそれに付随する業務</li>
+                      <li>飲食店、物販店その他実店舗の企画、運営及び管理</li>
+                      <li>ECサイト等のオンラインストアの企画、運営及び管理</li>
+                      <li>地域観光・文化体験に関するツアー企画、運営及びガイドマッチング事業</li>
+                      <li>ブランド開発、商品企画、デザイン及び販路開拓支援業</li>
+                    </ul>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </section>
@@ -516,8 +470,8 @@
               <div class="contact-detail">
                 <span class="detail-label lang-en">Office</span>
                 <span class="detail-label lang-jp">所在地</span>
-                <span class="detail-value lang-en">Marunouchi, Chiyoda-ku<br />Tokyo, Japan 〒100-0005</span>
-                <span class="detail-value lang-jp">〒100-0005<br />東京都千代田区丸の内</span>
+                <span class="detail-value lang-en">Aoyama Marutake Bldg. 6F<br />3-1-36 Minami-Aoyama, Minato-ku<br />Tokyo 〒150-0021</span>
+                <span class="detail-value lang-jp">〒150-0021<br />東京都港区南青山3-1-36<br />青山丸竹ビル6F</span>
               </div>
               <div class="contact-detail">
                 <span class="detail-label lang-en">Email</span>
@@ -607,28 +561,45 @@
     <div class="container">
       <div class="footer-top">
         <div class="footer-brand">
-          <span class="footer-logo">KBB Corp</span>
-          <p class="footer-tagline lang-en">Precision. Direction. Legacy.</p>
-          <p class="footer-tagline lang-jp">精密。方向性。遺産。</p>
+          <svg class="footer-logo-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 200" aria-label="KBB Corp">
+            <circle cx="100" cy="100" r="92" fill="transparent" stroke="#1a1a1a" stroke-width="5"/>
+            <clipPath id="footerClip"><circle cx="100" cy="100" r="89"/></clipPath>
+            <path d="M 14 93 C 14 32 186 32 186 93" fill="none" stroke="#BE1E2D" stroke-width="8" stroke-linecap="round"/>
+            <rect x="14" y="89" width="172" height="6" fill="#BE1E2D"/>
+            <line x1="30" y1="65" x2="30" y2="89" stroke="#BE1E2D" stroke-width="5"/>
+            <line x1="51" y1="47" x2="51" y2="89" stroke="#BE1E2D" stroke-width="5"/>
+            <line x1="74" y1="36" x2="74" y2="89" stroke="#BE1E2D" stroke-width="5"/>
+            <line x1="100" y1="32" x2="100" y2="89" stroke="#BE1E2D" stroke-width="5"/>
+            <line x1="126" y1="36" x2="126" y2="89" stroke="#BE1E2D" stroke-width="5"/>
+            <line x1="149" y1="47" x2="149" y2="89" stroke="#BE1E2D" stroke-width="5"/>
+            <line x1="170" y1="65" x2="170" y2="89" stroke="#BE1E2D" stroke-width="5"/>
+            <g clip-path="url(#footerClip)">
+              <path d="M 10 107 C 22 97,34 117,48 107 C 62 97,74 117,88 107 C 102 97,114 117,128 107 C 142 97,154 117,168 107 C 180 99,188 106,190 104" fill="none" stroke="#1a1a1a" stroke-width="3" stroke-linecap="round"/>
+              <path d="M 12 126 C 26 114,40 136,56 126 C 72 114,84 136,100 126 C 116 114,128 136,144 126 C 160 114,172 134,184 126" fill="none" stroke="#1a1a1a" stroke-width="3" stroke-linecap="round"/>
+              <path d="M 8 148 C 26 134,44 156,64 146 C 84 134,96 156,116 146 C 136 134,150 154,168 146 C 180 140,188 144,192 142" fill="none" stroke="#1a1a1a" stroke-width="3.5" stroke-linecap="round"/>
+            </g>
+            <text x="218" y="138" font-family="Georgia,'Times New Roman',serif" font-size="86" font-weight="700" letter-spacing="-3" fill="#1a1a1a">KBB</text>
+          </svg>
+          <p class="footer-tagline lang-en">Bridging Japan and the World.</p>
+          <p class="footer-tagline lang-jp">日本と世界をつなぐ架け橋。</p>
         </div>
         <div class="footer-links-col">
           <span class="footer-col-label lang-en">Company</span>
           <span class="footer-col-label lang-jp">会社</span>
-          <a href="#about" class="footer-link lang-en">About Us</a>
-          <a href="#about" class="footer-link lang-jp">会社概要</a>
+          <a href="#mission" class="footer-link lang-en">Mission</a>
+          <a href="#mission" class="footer-link lang-jp">ミッション</a>
           <a href="#services" class="footer-link lang-en">Services</a>
-          <a href="#services" class="footer-link lang-jp">サービス</a>
-          <a href="#insights" class="footer-link lang-en">Insights</a>
-          <a href="#insights" class="footer-link lang-jp">インサイト</a>
+          <a href="#services" class="footer-link lang-jp">事業内容</a>
+          <a href="#company" class="footer-link lang-en">About</a>
+          <a href="#company" class="footer-link lang-jp">会社概要</a>
         </div>
         <div class="footer-links-col">
           <span class="footer-col-label lang-en">Connect</span>
           <span class="footer-col-label lang-jp">つながり</span>
           <a href="#contact" class="footer-link lang-en">Contact</a>
           <a href="#contact" class="footer-link lang-jp">お問い合わせ</a>
-          <a href="#" class="footer-link">LinkedIn</a>
-          <a href="#" class="footer-link lang-en">Press Inquiries</a>
-          <a href="#" class="footer-link lang-jp">プレス問い合わせ</a>
+          <a href="https://kbbcorp.jp" class="footer-link" target="_blank" rel="noopener">kbbcorp.jp</a>
+          <a href="mailto:info@kbbcorp.jp" class="footer-link">info@kbbcorp.jp</a>
         </div>
       </div>
 

@@ -3,23 +3,6 @@
    Light & Sophisticated · Japanese-Cosmopolitan
 ═══════════════════════════════════════════════════════════ */
 
-/* ── Fixed Site Watermark ── */
-.site-watermark {
-  position: fixed;
-  top: 50%;
-  right: -0.05em;
-  transform: translateY(-50%);
-  font-family: var(--font-jp);
-  font-size: clamp(18rem, 40vw, 32rem);
-  font-weight: 200;
-  color: transparent;
-  -webkit-text-stroke: 1px rgba(0,0,0,0.055);
-  line-height: 1;
-  pointer-events: none;
-  user-select: none;
-  z-index: 0;
-}
-
 /* ── Custom Properties ── */
 :root {
   --cream:       #FAFAF8;

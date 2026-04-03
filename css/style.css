@@ -1701,3 +1701,12 @@ body[data-lang="jp"] p {
     display: none;
   }
 }
+
+/* ══════════════════════════════════════════════════════════
+   MOBILE NAV — HAMBURGER FLUSH RIGHT
+══════════════════════════════════════════════════════════ */
+@media (max-width: 768px) {
+  .nav-right {
+    margin-left: auto;
+  }
+}

@@ -17,9 +17,9 @@
   --rule:        #D8D2C8;
   --border:      #E4DDD4;
 
-  --font-display: 'Cormorant Garamond', 'Times New Roman', Georgia, serif;
-  --font-body:    'Inter', system-ui, -apple-system, sans-serif;
-  --font-jp:      'Noto Serif JP', 'Hiragino Mincho ProN', 'Yu Mincho', serif;
+  --font-display: Arial, 'Helvetica Neue', sans-serif;
+  --font-body:    Arial, 'Helvetica Neue', sans-serif;
+  --font-jp:      'Meiryo UI', 'Meiryo', 'Noto Sans JP', Arial, sans-serif;
 
   --max-w: 1280px;
   --nav-h: 76px;

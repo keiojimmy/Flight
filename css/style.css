@@ -19,7 +19,7 @@
 
   --font-display: Arial, 'Helvetica Neue', sans-serif;
   --font-body:    Arial, 'Helvetica Neue', sans-serif;
-  --font-jp:      'Meiryo UI', 'Meiryo', 'Noto Sans JP', Arial, sans-serif;
+  --font-jp:      'Noto Sans JP', '游ゴシック体', YuGothic, '游ゴシック', 'Yu Gothic', 'メイリオ', Meiryo, sans-serif;
 
   --max-w: 1280px;
   --nav-h: 76px;
